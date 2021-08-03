@@ -3,16 +3,32 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: cornsilk;
-}
-.container{
-    background-color: darksalmon;
-    border: solid tomato 2px;
-    padding: 20px;
-    width: 380px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+.container{
+    background-color: darksalmon;
+    border: solid tomato 1px;
+    width: 380px;
+    padding: 20px;
+}
+.cabecera{
+    background-color:steelblue;
+    height: 10px;
+    width: 380px;
+    padding: 21px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera--title{
+    font-weight: bold;
+}
+.post{
+}
 .title{
+    font-size: 30px;
     text-align: center;
 }
 .text{
