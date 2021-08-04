@@ -3,16 +3,24 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: cornsilk;
+    font-family: "Arial"
+    
 }
 .container{
     background-color: darksalmon;
-    border: solid tomato 2px;
-    padding: 20px;
+    border: solid tomato 1px;
     width: 380px;
-    font-family: "Arial";
-
+    padding: 20px;
+}
+.cabecera{
+    background-color:steelblue;
+    height: 10px;
+    width: 380px;
+    padding: 21px;
+    font-size: 20px;
 }
 .title{
+    font-size: 30px;
     text-align: center;
 }
 .text{
