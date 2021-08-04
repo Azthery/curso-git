@@ -1,5 +1,4 @@
 # **Apundes del curso de Git y GitHub** por Platzi
-Este es un repositorio de practica para el curso de Git y GitHub de platzi
 
 ## **Comandos de git**:
 
@@ -58,6 +57,9 @@ Si queremos comparar dos versiones diferentes de un archivo debemos de hacerle `
 - `git log > log.txt ` guardar los logs en un archivo txt
 
 ## **Conectar nuestro repositorio con GitHub**
+
+>Desde el 1 de octubre del 2020, GitHub cambio el nombre de la rama principal por defecto de "master" a "main", ya que esto estos nombres se de caracter ofennsivos, los cuales no debemos de seguir genarizando
+>Sin embargo Git no ha hecho estos cambios y estos pueden generar algunos problemas, para ellos en nuetro repositorio local podemos cambiar `branch` local por "main", en remoto por "master".
 
 Para conectar nuestro repositorio en local, con uno remoto ya creado en GitHub, debemos de ingresar el siguiente comando
 ```
