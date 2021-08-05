@@ -56,7 +56,7 @@ Si queremos comparar dos versiones diferentes de un archivo debemos de hacerle `
 - `git log -S “Por contenido”` Buscar los commits con el contenido dentro del archivo.
 - `git log > log.txt ` guardar los logs en un archivo txt
 
-## **Conectar nuestro repositorio con GitHub**
+## **Conectar nuestro repositorio local con GitHub**
 
 >Desde el 1 de octubre del 2020, GitHub cambio el nombre de la rama principal por defecto de "master" a "main", ya que esto estos nombres se de caracter ofennsivos, los cuales no debemos de seguir genarizando
 >Sin embargo Git no ha hecho estos cambios y estos pueden generar algunos problemas, para ellos en nuetro repositorio local podemos cambiar `branch` local por "main", en remoto por "master".
@@ -65,7 +65,7 @@ Para conectar nuestro repositorio en local, con uno remoto ya creado en GitHub, 
 ```
 git remote add origin URL
 ```
-Donde URL es el link en `http` del repositorio en **GitHub**
+Donde URL es el link en `https` del repositorio en **GitHub**
 
 Una vez hecho esto debemos de traernos el repositorio en **GitHub**, 
 para ello debemos
@@ -73,8 +73,16 @@ para ello debemos
 git pull origin master
 ```
 
-sin embargo **git** nos lanzara una **advertencia** un _warnning_, ya que este se "reusara a fusionar historias no relacionadas", sin embargo podemos forzar a que lo haga de la siguiente manera
+sin embargo **git** nos lanzara una **advertencia** un _warning_, ya que este se "rehusara a fusionar historias no relacionadas", sin embargo podemos forzar a que lo haga de la siguiente manera
 ```
 git pull origin master --allow-unrelated-histories
 ```
+Con esto ya tendremos sincronizado nuestro repositorio local, con nuestro repositorio remoto en GitHub.
 
+Algo que tenemos que tener en cuenta, es que desde GutHub podemos realizar cambios al los documentos _(a este mismo por ejemplo)_, y cada vez que queramos guardar este cambio realizaremos un **commit** al repositorio remoto de GitHub, sin embargo el repositorio local no cambiara.
+Tambien en el caso que estemos trabajando con mas persona en el mismo repositorio local y alguien haya agregado algún cambio.
+Para actualizar nuestro repositorio local debemos ejecutar en consola:
+```zsh
+git pull origin master
+```
+>No olvida que debemos de realizar esta accion con cuidado por que podemos llegar a perder cambios realizados en el respositorio local.
