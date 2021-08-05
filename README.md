@@ -1,7 +1,7 @@
 # **Apuntes del curso de Git y GitHub** por Platzi
 
-Estos son apuntes de autoria propia, junto a algunos extraidos del curso de Git y GitHub tomados por mi en Platzi, aqui podras ver una colección de comandos en consola, y pasos para implementar funcionalidades.
-Importante remarcar que para mis curso y para mis proyectos personales, estoy haciendo uso de WSL en Windows 10 _Windows Subsystem for Linux_, asi que los comando usados en este cursos funcionaran en WSL y Linux ubuntu, a menos que se remarque lo contrario.
+Estos son apuntes de autoria propia, junto a algunos extraidos del **curso de Git y GitHub** tomados en Platzi, podras ver aqui una colección de comandos en consola, y pasos para implementar funcionalidades de Git y GitHub.
+Importante remarcar que para mis curso y para mis proyectos personales, hago haciendo uso de **WSL** en Windows 10 _Windows Subsystem for Linux_, asi que los comando usados en este cursos funcionaran en **WSL** y **Linux Ubuntu**, a menos que se remarque lo contrario.
 
 ## **Comandos de git**:
 
