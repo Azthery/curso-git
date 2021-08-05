@@ -1,5 +1,8 @@
 # **Apuntes del curso de Git y GitHub** por Platzi
 
+Estos son apuntes del curso de Git y GitHub tomados por mi en Platzi, aqui podras ver una colección de comandos en consola, y pasos para implementar funcionalidades.
+Importante remarcar que para mis curso y para mis proyectos personales, estoy haciendo uso de WSL en Windows 10 _Windows Subsystem for Linux_, asi que los comando usados en este cursos funcionaran en WSL y Linux ubuntu, a menos que se remarque lo contrario.
+
 ## **Comandos de git**:
 
 - **git init** Inicializa git en el directorio actual
