@@ -1,4 +1,4 @@
-# **Apundes del curso de Git y GitHub** por Platzi
+# **Apuntes del curso de Git y GitHub** por Platzi
 
 ## **Comandos de git**:
 
