@@ -161,3 +161,55 @@ ssh-add ~/.ssh/id_rsa
 >- ~ = Home
 >- .ssh = carpeta ssh
 >- id_rsa = llave privada la que nunca debemos de mostrar.
+
+__________________________________________________________
+
+## **Conectar reposittorio local con GitHub**
+
+Primero debemos ubicarnos en la capeta **home**, para esto en mac debemos de:
+```zsh
+~
+```
+Aqui podemos ubicar la carpeta _(por default)_, la cual es **.ssh**
+```zsh
+.ssh/
+```
+para confirmar de que los archivos se encuentran aqui escribimos
+```zsh
+ls -al
+```
+
+Una vez ubicado los archivos, ya podremos agregarlos, escribiendo lo siguiente en consola:
+```zsh
+ssh-add ~/.ssh/ad_rsa
+```
+>Con esto agregamos nuestra **llave publica** o _public key_
+
+### **Agregando nuestro proyecto actual**
+
+Una vez hecho la anterior podemos diriginos al proyecto actual, una vez ahi cambiaremos nuestra **URL**, pero primero le daremos un vistazo a la actual con el comando
+```zsh
+git remote -v
+```
+Ahi podremos ver la **URL** actual, ahora bien debemos dirigirnos al repositorio en GitHub, ir al repositorio remoto y hacer lo siguiente:
+1. Preionar el boton verde de **Code**
+2. Seleccionar **SSH**
+3. Copiar esa **URL**
+
+Esta URL la agregaremos al repositorio local de la siguiente manera
+```zsh
+git remote set-url origin URL
+```
+- **URL**: Es la URL copiada en GitHub
+
+Una vez hecho esto por **buenas practicas**, haremos un `git pull` para verificar si todo esta bien y sincronizar cambios.
+```
+git pull
+```
+y luego nos preguntara si confiamos en la pagina "github.com" si deseamos continuar, le ingresaremos que
+```
+yes
+```
+Y con esto podremos proseguir a darle `git commit` y `git push`.
+
+_____________________________________________________
