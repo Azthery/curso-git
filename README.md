@@ -36,6 +36,9 @@ Si queremos comparar dos versiones diferentes de un archivo debemos de hacerle `
 >
 >- **git checkout** nos permite movenos entre `branch`
 
+___________________________________________
+
+
 ## **git log utiles**
 
 - `git log --oneline ` Te muestra el id commit y el título del commit.
@@ -55,6 +58,9 @@ Si queremos comparar dos versiones diferentes de un archivo debemos de hacerle `
 - `git log – index.html` Busca los commits en un archivo en específico.
 - `git log -S “Por contenido”` Buscar los commits con el contenido dentro del archivo.
 - `git log > log.txt ` guardar los logs en un archivo txt
+
+___________________________________________
+
 
 ## **Conectar nuestro repositorio local con GitHub**
 
@@ -87,6 +93,8 @@ git pull origin master
 ```
 >No olvida que debemos de realizar esta accion con cuidado por que podemos llegar a perder cambios realizados en el respositorio local.
 
+___________________________________________
+
 ## **Llaves publicas y privadas**
 
 Si queremos enviar un mensaje "secreto", no basta con solo darle una constraseña, ya que la misma contraseña podria ser capturada.
@@ -94,3 +102,62 @@ Para ellos existen las llaves publicas y privadas:
 
 - Llave publicas: Estas se las **puedes compartir a cualquiera**, ya que esta la envias al remitente para este codifique el mensaje
 - Llave privadas: Estas la usas para descodificar el mensaje que te han enviado, **esta es privada y no debe de ser compartida**
+
+___________________________________________
+
+
+## **SSH o Secure Shell**
+Es un protocolo de red que permite acceso remoto seguro a través de una conexión encriptada. Este método de autenticación requiere un passphrase (contraseña) o tambien puede funcionar sin passphrase sobre la clave.
+
+En el directorio **Home** ~
+
+```zsh
+git config -l
+```
+Muestra la configuración dentro de Git(user y email), Este comando funciona por que Git esta instalado en todo el equipo local.
+
+```zsh
+$ git config --global user.email “nombre_email_cambiado”
+```
+Se puede utilizar este mismo comando para cambiar el email.
+
+**Creamos la llave SSH**
+```zsh
+ssh-keygen -t rsa -b 4096 -C "tu_email@gmail.com"
+```
+1. **-t** = Especifica cual es el algoritmo que vamos a usar para crear esa llave.
+2. **rsa** = Algoritmo a usar, hasta el momento el mas popular.
+3. **-b** = Especifica que tan compleja es la llave.
+4. **4096** = Complejidad de la llave desde una perspectiva matemática.
+5. **-C** = Indica a que correo electrónico va estar conectado esta llave
+6. **"tu_email@gmail.com"** = Correo electrónico.
+
+>Guardar la llave en la dirección predeterminada.
+>
+>Passphrase: Password con espacios o Contraseña adicional de texto que le vas a poner a tu llave pública y privada.
+
+### **1er Paso:**
+Una ves que tengamos la llave, tenemos que agregarlo al entorno, y el entorno es básicamente que el sistema operativo donde tu trabajas sepa que la llave existe. Para ello ejecutamos lo sgte:
+
+revisar el servidor de llaves / Evalúa que un comando se dispare.
+```
+eval $(ssh-agent -s)
+```
+>**Agent pid 4724**
+>
+>Agent = Significa que el servidor de SHH esta corriendo.
+>
+>pid = Process id o identificador del proceso.
+>
+>4724 = Número que al sistema operativo le dice que el proceso esta corriendo.
+
+### **2do Paso:**
+
+Agregamos la llave privada a nuestro sistema o al servidor por que no basta con que la llave solo exista, sino debemos decirle que existe. Para ello ejecutamos el siguiente comando:
+```zsh
+ssh-add ~/.ssh/id_rsa
+ ```
+
+>- ~ = Home
+>- .ssh = carpeta ssh
+>- id_rsa = llave privada la que nunca debemos de mostrar.
