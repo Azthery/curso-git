@@ -86,3 +86,11 @@ Para actualizar nuestro repositorio local debemos ejecutar en consola:
 git pull origin master
 ```
 >No olvida que debemos de realizar esta accion con cuidado por que podemos llegar a perder cambios realizados en el respositorio local.
+
+## **Llaves publicas y privadas**
+
+Si queremos enviar un mensaje "secreto", no basta con solo darle una constraseña, ya que la misma contraseña podria ser capturada.
+Para ellos existen las llaves publicas y privadas:
+
+- Llave publicas: Estas se las **puedes compartir a cualquiera**, ya que esta la envias al remitente para este codifique el mensaje
+- Llave privadas: Estas la usas para descodificar el mensaje que te han enviado, **esta es privada y no debe de ser compartida**
