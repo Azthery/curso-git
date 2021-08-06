@@ -216,3 +216,35 @@ yes
 Y con esto podremos proseguir a darle `git commit` y `git push`.
 
 _____________________________________________________
+
+## **Tags y versiones**
+
+**Alias**: es una forma de guardar codigo que se nos haria muy largo y facilmente olvidable, en una variable corta de nuestra autoria.
+Osea es practicamente guardar un comando en consola como si fuera una variable string, lo haremos con un ejemplo, guardaremos el comando:
+```zsh
+git log --all --graph --decorate --oneline
+```
+Y ahora lo agregaremos al alias **arbolito**
+```zsh
+alias arbolito="git log --all --graph --decorate --oneline"
+```
+y listo, ahora solamente escribiendo
+```
+arbolito
+```
+ejecutare su comando asignado.
+
+**Tags**: Nuestro repositorio guarda multiples versiones de nuestro desarrollo del proyecto, nosotros podemos **marca** **puntos** en ese desarrollo, como recordatorio o marcas, las cuales podemos darle utilidad en GitHub, al hace uso de nuestros tags podremos volver al punto deseado de manera prodigia y sencilla.
+
+Para crear un **tag** debemos de indentificar primero el hush, para eso usaremos `arbolito`, debemos de copiar el Hush y usarlo en el siguiente comando
+```zsh
+git tag a- NombreDelTag -m "descripcion del tag" Hush
+```
+- **a-**: significa agregar un tag
+- **NombreDelTag**: es el nombre que le daremos a este, por convensión se usa la v0.1 para la primera version
+- **-m**: para enviar un mensaje como un `commit`
+- **"descripcion del tag"**: es eso, una descripcion
+- **Hush**: es el codigo de la versión a marcar
+
+
+>Al realizar un `git status` luego de crear un tag, no aparecera ningun cambio, sin embargo igualmente habra que hacer un `git pull` y un `git push`
