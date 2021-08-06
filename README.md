@@ -234,7 +234,8 @@ arbolito
 ```
 ejecutare su comando asignado.
 
-**Tags**: Nuestro repositorio guarda multiples versiones de nuestro desarrollo del proyecto, nosotros podemos **marca** **puntos** en ese desarrollo, como recordatorio o marcas, las cuales podemos darle utilidad en GitHub, al hace uso de nuestros tags podremos volver al punto deseado de manera prodigia y sencilla.
+### **Tags**
+Nuestro repositorio guarda multiples versiones de nuestro desarrollo del proyecto, nosotros podemos **marca** **puntos** en ese desarrollo, como recordatorio o marcas, las cuales podemos darle utilidad en GitHub, al hace uso de nuestros tags podremos volver al punto deseado de manera prodigia y sencilla.
 
 Para crear un **tag** debemos de indentificar primero el hush, para eso usaremos `arbolito`, debemos de copiar el Hush y usarlo en el siguiente comando
 ```zsh
@@ -248,3 +249,31 @@ git tag a- NombreDelTag -m "descripcion del tag" Hush
 
 
 >Al realizar un `git status` luego de crear un tag, no aparecera ningun cambio, sin embargo igualmente habra que hacer un `git pull` y un `git push`
+
+Al realizar un `git push` para **tags**, estos se le debe de hacer mediante su comando propio el cual es:
+```zsh
+git push origin --tags
+```
+
+### **Eliminar Tags**
+Pero si por alguna razón necesitamos eliminar un tag podemos eliminarlo facilmente desde la **interfaz de GitHub** o con comandos en consola de la siguiente manera:
+```zsh
+git tag -d NombreDelTag
+```
+- **-d**: delete
+- **NombreDelTag**: es el nombre del tag, bruh
+
+>Para finalizar debemos de realizar el tipico `git pull` y `git push`
+```zsh
+git push origin --tags
+```
+### **Eliminar Tags para GitHub**
+Sin embargo en GitHub no se eliminara los tags
+> esto se debe ya que los tags es una manera para indicar que el producto ya esta listo
+para eliminarlo de GitHub debemos de ejecutar el siguiente comando:
+```zsh
+git push origin :refs/tags/NombreDelTag
+```
+
+________________________________________________________________________
+
