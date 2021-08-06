@@ -270,6 +270,7 @@ git push origin --tags
 ### **Eliminar Tags para GitHub**
 Sin embargo en GitHub no se eliminara los tags
 > esto se debe ya que los tags es una manera para indicar que el producto ya esta listo
+
 para eliminarlo de GitHub debemos de ejecutar el siguiente comando:
 ```zsh
 git push origin :refs/tags/NombreDelTag
