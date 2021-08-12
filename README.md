@@ -292,3 +292,20 @@ Una vez creada estas para enviarlas al repositorio remoto se haria de la siguien
 ```zsh
 git push origin Nombre
 ```
+
+_________________________________________________________________________
+
+# **Collaborators**
+
+GitHub al ser un repositorio remoto nos permite llevar a cabo proyectos colaborativos, esto quiere decir que nos permite desarrollar un proyecto con mutiples colaboradores.
+
+Sin embargo **no cualquiera puede hacer un `push`**, ya que nuestro administrada(o) del repositorio debe de enviarnos una invitación.
+Nosotros como admi de nuestro repositorio, para invitar a un colaborador, debemos de seguir los siguientes pasos:
+
+1. Ir a nuestro repositorio.
+2. Settings
+3. Manage access
+4. Invite a collaborator
+5. ingresar el email o usarname de quien deseamos invitar
+
+_________________________________________________________________________
