@@ -278,7 +278,7 @@ git push origin :refs/tags/NombreDelTag
 
 ________________________________________________________________________
 
-# **Branch**
+## **Branch**
 
 Branch o _ramas_ son una manera de llevar versiones alternativas del desarrollo, ya sea fragmentando parte del desarrollo del mismo, para luego unirlo con la rama principal, o ya sea para experimentar con el mismo proyecto.
 
@@ -295,7 +295,7 @@ git push origin Nombre
 
 _________________________________________________________________________
 
-# **Collaborators**
+## **Collaborators**
 
 GitHub al ser un repositorio remoto nos permite llevar a cabo proyectos colaborativos, esto quiere decir que nos permite desarrollar un proyecto con mutiples colaboradores.
 
