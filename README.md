@@ -278,3 +278,17 @@ git push origin :refs/tags/NombreDelTag
 
 ________________________________________________________________________
 
+# **Branch**
+
+Branch o _ramas_ son una manera de llevar versiones alternativas del desarrollo, ya sea fragmentando parte del desarrollo del mismo, para luego unirlo con la rama principal, o ya sea para experimentar con el mismo proyecto.
+
+Recordar para **crear** un **branch** debemos:
+```zsh
+git branch Nombre
+```
+Donde **Nombre** seria el nombre que se le daria al **branch**.
+
+Una vez creada estas para enviarlas al repositorio remoto se haria de la siguiente manera
+```zsh
+git push origin Nombre
+```
