@@ -237,9 +237,10 @@ ejecutare su comando asignado.
 ### **Tags**
 Nuestro repositorio guarda multiples versiones de nuestro desarrollo del proyecto, nosotros podemos **marca** **puntos** en ese desarrollo, como recordatorio o marcas, las cuales podemos darle utilidad en GitHub, al hace uso de nuestros tags podremos volver al punto deseado de manera prodigia y sencilla.
 
-Para crear un **tag** debemos de indentificar primero el hush, para eso usaremos `arbolito`, debemos de copiar el Hush y usarlo en el siguiente comando
+Para **crear** un **tag** debemos de indentificar primero el hush, para eso usaremos `arbolito`, debemos de copiar el Hush y usarlo en el siguiente comando
+
 ```zsh
-git tag a- NombreDelTag -m "descripcion del tag" Hush
+git tag -a NombreDelTag -m "descripcion del tag" Hush
 ```
 - **a-**: significa agregar un tag
 - **NombreDelTag**: es el nombre que le daremos a este, por convensión se usa la v0.1 para la primera version
