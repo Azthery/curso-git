@@ -15,16 +15,24 @@ body{
 }
 header{
     display: flex;
-    align-content: center;
+    align-items: center;
     padding: 8px;
     background-color: #262626;
     font-size: 25px;
     color: azure;
     width: 100%;
 }
+#header--icon{
+    padding-left: 5px;
+    padding-right: 2px;
+    height: 28px;
+}
 header p{
     margin: 0px;
-    padding: 0px 10px;
+}
+#header--subtitle{
+    margin-left: 20px;
+    font-size: 20px;
 }
 main{
     display: flex;
