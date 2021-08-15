@@ -363,3 +363,36 @@ Quienes llevan a cabo esta tareas normalmente son los lideres del equipo o un pe
 ### Pero, **¿Por que y para que existe Pull Request?**
 
 Pull rquest es comparable con un control de calidad del codigo, es una manera de refinar el codigo en el proceso antes de mandarlo a nuestro producto, asi solucionando conflictos, problemas y bugs, lo cual nos ayuda a ahorrar tiempo y recursos a la hora de llevar a cabo el proyecto.
+
+_________________________________________________________________________
+
+## **Flujo de trabajo con Pull Request**
+
+Al hacer un pull request se genera una conversación que pueden seguir los demás usuarios del repositorio, así como autorizar y rechazar los cambios.
+
+El flujo d e trabajo es el siguiente:
+
+1. Se trabaja en una rama paralela los cambios que se desean 
+```zsh
+git checkout -b <rama>
+```
+2. Se hace un commit a la rama 
+```zsh
+git commit -am "<Comentario>"
+```
+3. **Se suben al remoto los cambios**
+```zsh
+git push origin <rama>
+```
+4. En GitHub se hace el `pull request` comparando la **rama master** con la rama del **fix**.
+5. Uno, o varios colaboradores revisan que **el código sea correcto** y dan **feedback** (en el chat del pull request).
+6. El colaborador hace los cambios que desea en la **rama** y lo **vuelve a subir** al remoto (automáticamente jala la historia de los cambios que se hagan en la rama, en remoto).
+7. Se **aceptan los cambios** en GitHub
+8. Se hace **merge** a `master` desde GitHub
+
+**Importante**: Cuando se modifica una `rama`, también se modifica el `pull request.`
+
+>_Notas Escritas por Davidad Behar en Platzi_
+
+_________________________________________________________________________
+
