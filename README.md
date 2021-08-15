@@ -317,6 +317,14 @@ git branch -D nameBranch
 ```
 git push origin --delete nameBranch
 ```
+
+**Fusionar** o **meclezclar ramas**, para realizar lo siguiente es importante posicionarse primero en la rama "principal" a la cual le queremos llevar esos cambios al realizar el **merge**, luego ejecute el comando
+```zsh
+git merge nameBranch
+```
+Luego de esto nos pedira **escribir** un **comentario**.
+Finalmente habra que ejecutar el tipico `git pull` y `git push`
+
 _________________________________________________________________________
 
 ## **Collaborators**
