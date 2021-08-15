@@ -309,7 +309,7 @@ git push origin nameBranch
 
 **Eliminar branch localmente**:
 ```zsh
-git branch -d nameBranch
+git branch -D nameBranch
 ```
 
 **Eliminar branch en repositorio**:
