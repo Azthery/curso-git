@@ -341,3 +341,25 @@ Nosotros como admi de nuestro repositorio, para invitar a un colaborador, debemo
 5. ingresar el email o usarname de quien deseamos invitar
 
 _________________________________________________________________________
+
+## **Flujo de trabajo profesional con Pull requests**
+
+Normalmente en entornos profesionales la **rama principal** _master o main_, se **bloquea** ya que esta rama se utiliza para alojar la version mas **estable** y **refinada** de nuestra app, es generalmente esta rama la cual es utilizada para enviar al **servidor** de la **pagina web** o a la **play store**.
+
+Para realizar pruebas y llevar a cabo el desarrollo se usa normalmente la rama llamada **staging server**
+
+### **Pull Request**
+
+Es la acción de **validar** el **codigo** que se va a **mergear** de un rama a otra, osea es una **estancia** donde se **evalua** si este **codigo** pasara para ser para hacerle **merge**, o **necesita correción**.
+Quienes llevan a cabo esta tareas normalmente son los lideres del equipo o un perfil denominados como **DevOps**.
+
+>Pull request **no es una caracteristic**a de **Git**, si no de **GitHub**.
+
+>Esta posee nombres diferentes para plataformas difetentes
+>- **GitHub:** Pull request
+>- **GitLab:** Merge request
+>- **Bitbucket:** Pull request
+
+### Pero, **¿Por que y para que existe Pull Request?**
+
+Pull rquest es comparable con un control de calidad del codigo, es una manera de refinar el codigo en el proceso antes de mandarlo a nuestro producto, asi solucionando conflictos, problemas y bugs, lo cual nos ayuda a ahorrar tiempo y recursos a la hora de llevar a cabo el proyecto.
