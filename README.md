@@ -280,19 +280,42 @@ ________________________________________________________________________
 
 ## **Branch**
 
-Branch o _ramas_ son una manera de llevar versiones alternativas del desarrollo, ya sea fragmentando parte del desarrollo del mismo, para luego unirlo con la rama principal, o ya sea para experimentar con el mismo proyecto.
+Branch o _ramas_ nos permite divir en versiones palalelas de nuestro proyecto, para trabajar en diferentes "sitios" del proyecto de forma individual, asi facilitando el trabajar en colaboración.
 
-Recordar para **crear** un **branch** debemos:
+Para **ver las ramas ejecutamos**:
 ```zsh
-git branch Nombre
-```
-Donde **Nombre** seria el nombre que se le daria al **branch**.
-
-Una vez creada estas para enviarlas al repositorio remoto se haria de la siguiente manera
-```zsh
-git push origin Nombre
+git branch
 ```
 
+Para **crear** una **branch**:
+```zsh
+git branch nameBranch
+```
+
+Si queremos **ver todas las ramas** :
+```zsh
+git show-branch --all
+```
+
+Para **movernos entre branch**:
+```zsh
+git checkout nameBranch
+```
+
+Si queremos **enviar** nuestra **rama** al **repositorio**:
+```zsh
+git push origin nameBranch
+```
+
+**Eliminar branch localmente**:
+```zsh
+git branch -d nameBranch
+```
+
+**Eliminar branch en repositorio**:
+```
+git push origin --delete nameBranch
+```
 _________________________________________________________________________
 
 ## **Collaborators**
