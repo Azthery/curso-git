@@ -41,6 +41,12 @@ main{
     margin-left: 20%;
     margin-top: 10px;
 }
+@media screen and (max-width: 740px){
+    main{
+        width: 100%;
+        margin-left: 2px;
+    }
+}
 
 .create{
     text-align: center;
