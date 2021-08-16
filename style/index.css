@@ -37,14 +37,14 @@ header p{
 main{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-left: 20%;
     margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
 }
-@media screen and (max-width: 740px){
+@media screen and (min-width: 740px){
     main{
-        width: 100%;
-        margin-left: 2px;
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
