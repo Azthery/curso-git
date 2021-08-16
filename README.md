@@ -3,6 +3,8 @@
 Estos son apuntes de autoria propia, junto a algunos extraidos del **curso de Git y GitHub** tomados en Platzi, podras ver aqui una colección de comandos de consola, y pasos para implementar funcionalidades de Git y GitHub.
 Importante remarcar que para mis curso y para mis proyectos personales, hago haciendo uso de **WSL** en Windows 10 _Windows Subsystem for Linux_, asi que los comando usados en este cursos funcionaran en **WSL** y **Linux Ubuntu**, a menos que se remarque lo contrario.
 
+Si deseas ver el proyecto de blog en html y css de este repositorio desplegado, podras encontrarlo aqui: [azthery.github.io/curso-git/](azthery.github.io/curso-git/)
+
 ## **Comandos de git**:
 
 - **git init** Inicializa git en el directorio actual
@@ -429,6 +431,30 @@ git pull upstream master
 Éste `pull` nos traerá los **cambios del remoto**, por lo que se estará al día en el proyecto, el flujo de trabajo cambia, en adelante se estará trabajando haciendo **pull desde el upstream** y **push al origin** para pasar a hacer **pull request**.
 
 >_Notas Escritas por Davidad Behar en Platzi_
+
+_________________________________________________________________________
+
+## Ignorar archivos en el repositorio con **.gitignore**
+
+**No todos los archivos deben de ser guardados** en el repositorio, siempre habra algunos que deban de ser **ignorados**, por razónes de seguridad, tipo de archivo, privacidad,  blob (binary large object, objeto binario grande), es `node_modules`, etc.
+
+Para **evitar** que estos archivos se **guarden** en el **repositorio**, existe `.gitignore`.
+
+[Syntax de .gitignore](https://git-scm.com/docs/gitignore)
+
+Algunas sintaxis mas comunes son:
+- **/dir/archive.js** : agregar la url del **directorio**
+- __*.jpg__ : usando y un `*` junto con la `extención`, **ignorara** todos estos tipos de archivos
+
+_________________________________________________________________________
+
+**Readme.md y Markdown**, es una excelente práctica
+
+`README.md` es un archivo que te vas a encontrar en la mayoria de repositorios, es un archivo en **MarkDown** `.md` similar a un `.txt` pero el cual tiene mayor capacidad de edición.
+
+Es una buena practica utilizar el `README.md`, ya que en GitHub este sera visible en la pantalla de vista general del repositorio, en el cual generalmente se utiliza escribir la descripción del repositorio y/o la documentación, pero en si puedes utilizarlo para escribir lo que ti se te ocurra, como yo que lo utilizo para escribir los apuntes de esta curso.
+
+>El archivo `README.md`, se escuenta en la raiz del repositorio
 
 _________________________________________________________________________
 
