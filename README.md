@@ -515,6 +515,11 @@ git stash apply stash@{<num_stash>}
 git stash branch <newBranch>
 ```
 
+- **Guarda** el stash **especifico** en una **nueva rama**
+```zsh
+git stash branch nombre_de_rama stash@{num_stash}
+```
+
 - **Eliminar stash mas reciente**
 ```zsh
 git stash drop
