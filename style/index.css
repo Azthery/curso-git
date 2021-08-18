@@ -34,17 +34,18 @@ header p{
     margin-left: 20px;
     font-size: 20px;
 }
-main{
+.container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+main{
     margin-top: 10px;
     width: 100%;
-    margin-left: 0px;
 }
-@media screen and (min-width: 740px){
+@media (min-width: 740px){
     main{
         width: 60%;
-        margin-left: 20%;
     }
 }
 
@@ -56,7 +57,7 @@ main{
     padding-bottom: 8px;
 }
 .create--title{
-    margin-top: 8px;
+    padding-top: 8px;
     margin-bottom: 5px;
 }
 .create__text{
@@ -100,7 +101,6 @@ main{
 }
 .create__buttons--publish:hover{
     background-color: rgb(19, 85, 46);
-    cursor: pointer;
 }
 .post{
     background-color: rgb(243, 243, 243);
@@ -129,19 +129,14 @@ main{
 }
 .post__header__detail--img:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .post__header__detail__info--user{
     font-weight: bold;
 }
-.post__header__detail__info--user:hover{
-    text-decoration: underline;
-}
 .post__header__detail__info--date{
     font-size: small;
     font-style: italic;
-}
-.post__header__detail__info--date:hover{
-    text-decoration: underline;
 }
 .post__header__options{
     border-radius: 100%;
@@ -153,6 +148,7 @@ main{
 }
 .post__header__options:hover{
     background-color: rgba(128, 128, 128, 0.473);
+    cursor: pointer;
 }
 
 .post__text{
@@ -173,6 +169,7 @@ footer a{
     color: azure;
     text-decoration: none;
 }
-footer a:hover{
+.hover-text:hover{
+    cursor: pointer;
     text-decoration: underline;
 }

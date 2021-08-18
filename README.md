@@ -458,3 +458,21 @@ Es una buena practica utilizar el `README.md`, ya que en GitHub este sera visibl
 
 _________________________________________________________________________
 
+## **Git Rebase**: reorganizando el trabajo realizado
+
+`git rebase` reescribe la historia del repositorio, en donde originalmente fue cambios realizados en dos ramas, sera que todos esos cambios fueron hechos solo en una.
+Es como si fuera un merge pero fusionando tambien sus historias.
+
+Ralizar un `git rebase` es una **muy mala practica**, se debe de hace bajo circunstancias muy especificas y solo en el repositorio local.
+
+Como utilizar `git rebase`:
+
+1. Ubicarnos en la **rama** que **ira a desaparecer**.
+2. **Usar** `git rebase <principal branch>`
+3. Luego ubicarnos en la **rama principal**
+4. Usar ahora `git rebase <experimental branch>`
+5. (opciónal) eliminar rama experimental
+
+_________________________________________________________________________
+
+## Git Stash: Guardar cambios en memoria
