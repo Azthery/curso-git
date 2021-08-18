@@ -476,3 +476,56 @@ Como utilizar `git rebase`:
 _________________________________________________________________________
 
 ## Git Stash: Guardar cambios en memoria
+
+`git stash` nos permite **guardar** en cambios hechos que aun no hemos mandados en un `commit`, en una especie de **"memoria alterna"**.
+Esto nos puede ser de **gran utilidad en caso que querramos cambiar de rama** y no querramos aun hacer un `commit` los cambios, u cualquier otra utilidad que se nos ocurra.
+Al hacer `stash` todos nuestros **cambios realizados se guardaran** y **volveremos a como estaba nuestra rama en nuestro anterior `commit`**
+
+- Para hacer uso de `git stash`, **debemos de estar en la rama** con los cambios aun enviados y **ejecutar**:
+```zsh
+git stash
+```
+Si deseamos podemos **asignarle un mensaje al stash**
+```zsh
+git stash save "<mensaje>"
+```
+
+- Ver los **stash guardados**
+```zsh
+git statsh list
+```
+
+- Recuperar ultimo stash
+```zsh
+git stash pop
+```
+
+- Aplicar stash **especifico** y **eliminarlo**
+```zsh
+git stash pop stash@{<num_stash>}
+```
+
+- **Retomar** los cambios de una **posición específica** del Stash
+```zsh
+git stash apply stash@{<num_stash>}
+```
+
+- **Guardar** el stash en una **nueva rama**
+```zsh
+git stash branch <newBranch>
+```
+
+- **Eliminar stash mas reciente**
+```zsh
+git stash drop
+```
+
+- **Eliminar stash especifico**
+```zsh
+git stash drop stash@{<num_stash>}
+```
+
+- **Eliminar todos los stash**
+```zsh
+git stash clear
+```
