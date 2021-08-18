@@ -529,3 +529,9 @@ git stash drop stash@{<num_stash>}
 ```zsh
 git stash clear
 ```
+
+### **Considerar:**
+- El cambio más reciente (al crear un stash) **siempre** recibe el valor 0 y los que estaban antes aumentan su valor.
+- Al crear un stash tomará los archivos que han sido modificados y eliminados. 
+Para que tome un archivo creado es necesario **agregarlo** al **Staging Area** con `git add archive` con la intención de que git tenga un seguimiento de ese archivo, o también utilizando el comando `git stash -u` (_que guardará en el stash los archivos que no estén en el staging_).
+- Al aplicar un stash este no se elimina, **es buena práctica eliminarlo**.
