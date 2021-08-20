@@ -3,7 +3,7 @@
 Estos son apuntes de autoria propia, junto a algunos extraidos del **curso de Git y GitHub** tomados en Platzi, podras ver aqui una colección de comandos de consola, y pasos para implementar funcionalidades de Git y GitHub.
 Importante remarcar que para mis curso y para mis proyectos personales, hago haciendo uso de **WSL** en Windows 10 _Windows Subsystem for Linux_, asi que los comando usados en este cursos funcionaran en **WSL** y **Linux Ubuntu**, a menos que se remarque lo contrario.
 
-Si deseas ver el proyecto de blog en html y css de este repositorio desplegado, podras encontrarlo aqui: [azthery.github.io/curso-git/](azthery.github.io/curso-git/)
+Si deseas ver el proyecto de blog en html y css de este repositorio desplegado, podras encontrarlo aqui: [https://azthery.github.io/curso-git/](https://azthery.github.io/curso-git/)
 
 ## **Comandos de git**:
 
